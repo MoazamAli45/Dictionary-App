@@ -50,6 +50,10 @@ main {
   outline: none;
   padding: 15px 20px;
   border-radius: 5px;
+
+}
+.search-btn:hover{
+    background-color: #2980b9;
 }
 .words-sound {
   display: flex;
@@ -89,6 +93,9 @@ main {
     /* transform: translateY(4rem); */
 }
 @media screen and (max-width:576px){
+    .container{
+        padding:20px 20px;
+    }
     .search{
         padding:0;
         /* width:120%; */

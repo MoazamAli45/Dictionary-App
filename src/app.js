@@ -25,7 +25,7 @@ const loadWord = async function () {
  <div class="description">
      <div class="Prons">
          <p class="parts-Of-Speech">${data[0].meanings[0].partOfSpeech}</p>
-        <p class="pronounce"> ${data[0].phonetics[0].text} </p>
+        <p class="pronounce"> ${data[0].phonetics[0].text || ''} </p>
       </div>
      <div class="meaning">
      ${data[0].meanings[0].definitions[0].definition}
@@ -41,7 +41,6 @@ const loadWord = async function () {
 };
 // Sound will play when we click on voice button that is added in literal
 const playSound = function () {
-
   // to play sound
   sound.play();
 };
